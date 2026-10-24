@@ -1,0 +1,203 @@
+{
+  "selected_model": "LightGBM",
+  "selected_params": {
+    "num_leaves": 4,
+    "min_child_samples": 5,
+    "n_estimators": 100
+  },
+  "explained_model": "LightGBM",
+  "n_supervised_rows": 156,
+  "validation": [
+    {
+      "model": "Persistence (naive)",
+      "family": "baseline",
+      "MAE": 53.154,
+      "RMSE": 96.92,
+      "WAPE_%": 25.498,
+      "R2": 0.901,
+      "MAE_log": 0.304,
+      "Skill_vs_persistence_%": 0.0,
+      "National_APE_%": 25.377
+    },
+    {
+      "model": "Moving average (2 wk)",
+      "family": "baseline",
+      "MAE": 60.327,
+      "RMSE": 108.872,
+      "WAPE_%": 28.939,
+      "R2": 0.875,
+      "MAE_log": 0.326,
+      "Skill_vs_persistence_%": -13.495,
+      "National_APE_%": 31.085
+    },
+    {
+      "model": "National-trend naive",
+      "family": "baseline",
+      "MAE": 36.934,
+      "RMSE": 62.537,
+      "WAPE_%": 17.718,
+      "R2": 0.959,
+      "MAE_log": 0.256,
+      "Skill_vs_persistence_%": 30.514,
+      "National_APE_%": 15.247
+    },
+    {
+      "model": "Ridge regression",
+      "family": "linear",
+      "MAE": 177.7,
+      "RMSE": 296.386,
+      "WAPE_%": 85.243,
+      "R2": 0.075,
+      "MAE_log": 0.759,
+      "Skill_vs_persistence_%": -234.312,
+      "National_APE_%": 80.261
+    },
+    {
+      "model": "Random Forest",
+      "family": "bagging",
+      "MAE": 38.18,
+      "RMSE": 70.565,
+      "WAPE_%": 18.315,
+      "R2": 0.948,
+      "MAE_log": 0.263,
+      "Skill_vs_persistence_%": 28.17,
+      "National_APE_%": 18.855
+    },
+    {
+      "model": "XGBoost",
+      "family": "boosting",
+      "MAE": 38.874,
+      "RMSE": 76.243,
+      "WAPE_%": 18.648,
+      "R2": 0.939,
+      "MAE_log": 0.291,
+      "Skill_vs_persistence_%": 26.865,
+      "National_APE_%": 18.325
+    },
+    {
+      "model": "LightGBM",
+      "family": "boosting",
+      "MAE": 36.799,
+      "RMSE": 63.457,
+      "WAPE_%": 17.653,
+      "R2": 0.958,
+      "MAE_log": 0.265,
+      "Skill_vs_persistence_%": 30.768,
+      "National_APE_%": 17.609
+    },
+    {
+      "model": "Ensemble (RF+XGB+LGBM mean)",
+      "family": "ensemble",
+      "MAE": 37.422,
+      "RMSE": 69.424,
+      "WAPE_%": 17.952,
+      "R2": 0.949,
+      "MAE_log": 0.269,
+      "Skill_vs_persistence_%": 29.597,
+      "National_APE_%": 18.201
+    }
+  ],
+  "test": [
+    {
+      "model": "Persistence (naive)",
+      "family": "baseline",
+      "MAE": 40.5,
+      "RMSE": 69.396,
+      "WAPE_%": 32.167,
+      "R2": 0.853,
+      "MAE_log": 0.371,
+      "Skill_vs_persistence_%": 0.0,
+      "National_APE_%": 31.485
+    },
+    {
+      "model": "Moving average (2 wk)",
+      "family": "baseline",
+      "MAE": 61.24,
+      "RMSE": 109.915,
+      "WAPE_%": 48.641,
+      "R2": 0.632,
+      "MAE_log": 0.46,
+      "Skill_vs_persistence_%": -51.211,
+      "National_APE_%": 48.966
+    },
+    {
+      "model": "National-trend naive",
+      "family": "baseline",
+      "MAE": 23.012,
+      "RMSE": 38.593,
+      "WAPE_%": 18.277,
+      "R2": 0.955,
+      "MAE_log": 0.322,
+      "Skill_vs_persistence_%": 43.181,
+      "National_APE_%": 16.92
+    },
+    {
+      "model": "Ridge regression",
+      "family": "linear",
+      "MAE": 44.125,
+      "RMSE": 77.553,
+      "WAPE_%": 35.047,
+      "R2": 0.817,
+      "MAE_log": 0.453,
+      "Skill_vs_persistence_%": -8.95,
+      "National_APE_%": 32.504
+    },
+    {
+      "model": "Random Forest",
+      "family": "bagging",
+      "MAE": 19.516,
+      "RMSE": 32.234,
+      "WAPE_%": 15.5,
+      "R2": 0.968,
+      "MAE_log": 0.298,
+      "Skill_vs_persistence_%": 51.813,
+      "National_APE_%": 10.631
+    },
+    {
+      "model": "XGBoost",
+      "family": "boosting",
+      "MAE": 20.879,
+      "RMSE": 35.638,
+      "WAPE_%": 16.583,
+      "R2": 0.961,
+      "MAE_log": 0.306,
+      "Skill_vs_persistence_%": 48.448,
+      "National_APE_%": 9.773
+    },
+    {
+      "model": "LightGBM",
+      "family": "boosting",
+      "MAE": 18.005,
+      "RMSE": 30.265,
+      "WAPE_%": 14.301,
+      "R2": 0.972,
+      "MAE_log": 0.276,
+      "Skill_vs_persistence_%": 55.543,
+      "National_APE_%": 9.54
+    },
+    {
+      "model": "Ensemble (RF+XGB+LGBM mean)",
+      "family": "ensemble",
+      "MAE": 19.319,
+      "RMSE": 32.176,
+      "WAPE_%": 15.345,
+      "R2": 0.968,
+      "MAE_log": 0.291,
+      "Skill_vs_persistence_%": 52.298,
+      "National_APE_%": 9.983
+    }
+  ],
+  "shap_importance": {
+    "national_growth_1w": 0.1371,
+    "growth_1w": 0.093,
+    "intensity_vs_hist": 0.047,
+    "log_cases_t": 0.045,
+    "log_lepto_t": 0.0271,
+    "log_hist_weekly_mean": 0.0203,
+    "cases_vs_ytd_rate": 0.0175,
+    "log_ytd_weekly_rate": 0.0096
+  },
+  "forecast_origin": "2026-08-16",
+  "forecast_target": "2026-08-23",
+  "national_forecast_sum": 2123.8
+}

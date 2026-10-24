@@ -1,0 +1,17 @@
+model,target_date,MAE,actual_total,forecast_total
+Ensemble (RF+XGB+LGBM mean),2026-08-09,17.4,3865.0,3747.1
+Ensemble (RF+XGB+LGBM mean),2026-08-16,21.3,2682.0,3135.7
+LightGBM,2026-08-09,17.1,3865.0,3683.8
+LightGBM,2026-08-16,18.9,2682.0,3068.0
+Moving average (2 wk),2026-08-09,60.9,3865.0,5420.0
+Moving average (2 wk),2026-08-16,61.6,2682.0,4229.5
+National-trend naive,2026-08-09,20.9,3865.0,3372.3
+National-trend naive,2026-08-16,25.2,2682.0,3247.7
+Persistence (naive),2026-08-09,33.5,3865.0,4594.0
+Persistence (naive),2026-08-16,47.5,2682.0,3865.0
+Random Forest,2026-08-09,16.1,3865.0,3776.8
+Random Forest,2026-08-16,22.9,2682.0,3191.1
+Ridge regression,2026-08-09,58.9,3865.0,2335.5
+Ridge regression,2026-08-16,29.4,2682.0,3364.2
+XGBoost,2026-08-09,19.5,3865.0,3787.4
+XGBoost,2026-08-16,22.2,2682.0,3152.4

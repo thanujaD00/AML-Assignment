@@ -1,0 +1,6 @@
+model,n_rows_available,MAE,RMSE,WAPE_%,R2,MAE_log,Skill_vs_persistence_%,National_APE_%
+Persistence (naive),234,40.5,69.396,32.167,0.853,0.371,0.0,31.485
+National-trend naive,234,23.012,38.593,18.277,0.955,0.322,43.181,16.92
+Random Forest,234,22.158,36.421,17.599,0.96,0.365,45.288,11.92
+XGBoost,234,16.88,28.303,13.407,0.976,0.338,58.321,9.977
+LightGBM,234,19.506,33.24,15.493,0.966,0.342,51.837,11.582

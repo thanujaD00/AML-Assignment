@@ -1,0 +1,9 @@
+model,family,MAE,RMSE,WAPE_%,R2,MAE_log,Skill_vs_persistence_%,National_APE_%
+Persistence (naive),baseline,53.154,96.92,25.498,0.901,0.304,0.0,25.377
+Moving average (2 wk),baseline,60.327,108.872,28.939,0.875,0.326,-13.495,31.085
+National-trend naive,baseline,36.934,62.537,17.718,0.959,0.256,30.514,15.247
+Ridge regression,linear,177.7,296.386,85.243,0.075,0.759,-234.312,80.261
+Random Forest,bagging,38.18,70.565,18.315,0.948,0.263,28.17,18.855
+XGBoost,boosting,38.874,76.243,18.648,0.939,0.291,26.865,18.325
+LightGBM,boosting,36.799,63.457,17.653,0.958,0.265,30.768,17.609
+Ensemble (RF+XGB+LGBM mean),ensemble,37.422,69.424,17.952,0.949,0.269,29.597,18.201

@@ -1,0 +1,57 @@
+{
+  "division": "Colombo",
+  "model": "LightGBM",
+  "origin_week_ending": "2026-08-09",
+  "forecast_week_ending": "2026-08-16",
+  "cases_this_week": 799,
+  "predicted_log_growth": -0.2019,
+  "predicted_cases": 652.7,
+  "actual_cases": 584,
+  "shap_base_value": -0.0982,
+  "shap_contributions": {
+    "log_cases_t": -0.0202,
+    "growth_1w": 0.0524,
+    "log_hist_weekly_mean": -0.0007,
+    "intensity_vs_hist": -0.0103,
+    "log_ytd_weekly_rate": 0.0025,
+    "cases_vs_ytd_rate": -0.0115,
+    "log_lepto_t": 0.0156,
+    "national_growth_1w": -0.1315
+  },
+  "lime_weights": [
+    [
+      "growth_1w <= -0.21",
+      0.1832
+    ],
+    [
+      "national_growth_1w <= -0.14",
+      -0.1505
+    ],
+    [
+      "log_cases_t > 5.67",
+      -0.0316
+    ],
+    [
+      "log_lepto_t > 2.05",
+      0.026
+    ],
+    [
+      "0.34 < cases_vs_ytd_rate <= 0.82",
+      -0.0147
+    ],
+    [
+      "log_ytd_weekly_rate > 4.98",
+      -0.0123
+    ],
+    [
+      "0.85 < intensity_vs_hist <= 1.57",
+      -0.0063
+    ],
+    [
+      "log_hist_weekly_mean > 3.97",
+      -0.0001
+    ]
+  ],
+  "lime_local_r2": 0.305,
+  "lime_local_prediction": -0.1339
+}

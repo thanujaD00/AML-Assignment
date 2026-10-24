@@ -1,0 +1,6 @@
+,MAE,MAE,MAE,MAE,RMSE,RMSE,RMSE,RMSE
+,mean,std,min,max,mean,std,min,max
+model,,,,,,,,
+LightGBM,17.98,0.27,17.51,18.18,30.78,0.71,29.78,31.68
+Random Forest,19.24,0.25,18.88,19.48,31.79,0.54,30.91,32.26
+XGBoost,22.0,1.09,20.47,23.21,37.48,2.27,34.83,40.11
